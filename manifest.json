@@ -1,7 +1,7 @@
 {
-  "name": "github-repo-remark",
+  "name": "GitHub Remarks",
   "manifest_version": 2,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a chrome extension that can give github repos your own remarks",
   "icons":
   {
@@ -16,11 +16,9 @@
       "38": "icons/icon_38.png"
     }
   },
-  
   "permissions": [
     "storage"
   ],
-
   "content_scripts": [
     {
       "matches": ["*://github.com/*/*"],
@@ -29,7 +27,7 @@
       "run_at": "document_end"
     },
     {
-      "matches": ["*://github.com/*tab=stars"],
+      "matches": ["*://github.com/*"],
       "js": [
         "lib/jquery.min.js",
         "lib/list.min.js",
