@@ -1,4 +1,4 @@
-# github-repo-remark
+# GitHub Remarks
 
 ## 安装
 
