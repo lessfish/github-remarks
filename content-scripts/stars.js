@@ -149,9 +149,7 @@ function initStarsPage() {
   })
 }
 
-MutationObserver = window.MutationObserver || window.WebKitMutationObserver;
-
-var observer = new MutationObserver(function(mutations, observer) {
+$(document).ready(() => {
   let url = location.href 
   let p = /.*\/\/github.com\/.*\?tab=stars.*/
 
@@ -160,11 +158,7 @@ var observer = new MutationObserver(function(mutations, observer) {
   }
 })
 
-observer.observe(document.getElementById('js-pjax-container'), {
-  childList: true
-})
-
-$(document).ready(() => {
+$(document).on('pjax:complete', function() {
   let url = location.href 
   let p = /.*\/\/github.com\/.*\?tab=stars.*/
 
