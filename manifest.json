@@ -29,7 +29,6 @@
     {
       "matches": ["*://github.com/*"],
       "js": [
-        "lib/jquery.min.js",
         "lib/list.min.js",
         "content-scripts/stars.js"
       ],
