@@ -33,7 +33,7 @@ function initStarsPage() {
           </div>
           <div style="display:none;margin-top:10px;" class="edit-remarks-area">
             <textarea class="form-control comment-form-textarea remarks-content" style="margin-bottom:5px"></textarea>
-            <a href="javascript:;" class="btn btn-sm btn-primary save-remarks-btn">保存</a>
+            <a href="javascript:;" class="btn btn-sm btn-primary save-remarks-btn">Save</a>
           </div>
         </div>`
 
