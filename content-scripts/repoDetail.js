@@ -9,8 +9,9 @@ if (document.querySelector('.pagehead-actions')) {
     const remark = obj[repoKey]
     // 已经有备注过
     if (remark) {
-      const el = document.querySelector('#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.mb-3 > div.f4 > span.text-gray-dark.mr-2')
-
+      const noTag = document.querySelector('#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.mb-3 > div.f4 > span.text-gray-dark.mr-2')
+      const haveTag = document.querySelector('#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.repository-topics-container.mt-2.mb-3.js-topics-list-container > div.list-topics-container.f6')
+      el = noTag ? noTag : haveTag
       const html =
       `
       <div>
@@ -65,7 +66,9 @@ if (document.querySelector('.pagehead-actions')) {
         return false
       }
     } else {
-      const el = document.querySelector('#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.mb-3 > div.f4 > span.text-gray-dark.mr-2')
+      const noTag = document.querySelector('#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.mb-3 > div.f4 > span.text-gray-dark.mr-2')
+      const haveTag = document.querySelector('#js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav > div.repository-content > div.repository-topics-container.mt-2.mb-3.js-topics-list-container > div.list-topics-container.f6')
+      el = noTag ? noTag : haveTag
 
       const html =
       `
